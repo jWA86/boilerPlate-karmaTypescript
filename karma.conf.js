@@ -11,6 +11,9 @@ module.exports = function(config) {
         },
         reporters: ["dots", "karma-typescript"],
 
-        browsers: ["Chrome", "Firefox", "IE", "PhantomJS"]
+        browsers: ["Chrome", "Firefox", "IE", "PhantomJS"],
+
+        singleRun: false,
+        concurrency: Infinity
     });
 };
