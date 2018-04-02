@@ -9,6 +9,14 @@ module.exports = function(config) {
             "**/*.ts": ["karma-typescript"]
             
         },
+
+        karmaTypescriptConfig: {
+            compilerOptions: {
+                module: "commonjs"
+            },
+            tsconfig: "./tsconfig.json",
+        },
+
         reporters: ["dots", "karma-typescript"],
 
         browsers: ["Chrome", "Firefox", "IE", "PhantomJS"],
